@@ -1,0 +1,20 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Camera2D.gd" type="Script" id=1]
+
+[node name="Camera2D" type="Camera2D"]
+position = Vector2( 656, 392 )
+current = true
+zoom = Vector2( 2, 2 )
+limit_left = -1000000
+limit_top = -1000000
+smoothing_enabled = true
+script = ExtResource( 1 )
+
+[node name="Limits" type="Node" parent="."]
+
+[node name="TopLeft" type="Position2D" parent="Limits"]
+position = Vector2( 336, 212 )
+
+[node name="BottomRight" type="Position2D" parent="Limits"]
+position = Vector2( 480, 368 )
